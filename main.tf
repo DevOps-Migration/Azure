@@ -1,5 +1,5 @@
 # Generate random resource group name
-resource "resource_group_name" "rg_name" {
+resource "azurerm_resource_group" "rg" {
   name = var.resource_group_name
 #  prefix = var.resource_group_name_prefix
 }
