@@ -1,12 +1,11 @@
 # Generate random resource group name
-resource "azurerm_resource_group" "rg" {
-  name = var.resource_group_name
-#  prefix = var.resource_group_name_prefix
+resource "random_pet" "rg_name" {
+  prefix = var.resource_group_name_prefix
 }
 
 resource "azurerm_resource_group" "rg" {
   location = var.resource_group_location
-  name     = var.resoource_group_name.rg_name.id
+  name     = random_pet.rg_name.id
 }
 
 resource "random_id" "log_analytics_workspace_name_suffix" {
@@ -54,7 +53,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
 
 #    ssh_key {
 #      key_data = file(var.ssh_public_key)
-#    }
+#   }
 #  }
   network_profile {
     network_plugin    = "kubenet"
