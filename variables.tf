@@ -34,19 +34,19 @@ variable "log_analytics_workspace_sku" {
   default = "PerGB2018"
 }
 
-variable "resoource_group_name" {
-  default = "rg-dhl-prod-sea"
-}
-
-variable "resource_group_location" {
-  default     = "southeastasia"
-  description = "Location of the resource group."
-}
-
-#variable "resource_group_name_prefix" {
-#  default     = "rg"
-#  description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
+#variable "resoource_group_name" {
+#  default = "rg-dhl-prod-sea"
 #}
+
+#variable "resource_group_location" {
+#  default     = "southeastasia"
+#  description = "Location of the resource group."
+#}
+
+variable "resource_group_name_prefix" {
+  default     = "rg"
+  description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
+}
 
 #variable "ssh_public_key" {
 #  default = "~/.ssh/id_rsa.pub"
