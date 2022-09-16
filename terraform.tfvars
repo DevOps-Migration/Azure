@@ -1,0 +1,5 @@
+aks_service_principal_app_id = "df80937f-3827-4644-b18b-72f13a5bbffc"
+aks_service_principal_client_secret = "QO18Q~Nc~EYCvLicYxwb324xo9.exCztKZTPXb~h"
+displayName = "azure-cli-2022-09-16-10-27-48"
+tenant = "512ec501-cb12-46d1-bbef-7f52f8ad2df8"
+subscription_id = "d4dca42b-b201-4096-b550-5ab440be22bb"
