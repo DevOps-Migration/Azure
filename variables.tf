@@ -13,20 +13,20 @@ variable "aks_service_principal_client_secret" {
 }
 
 variable "cluster_name" {
-  default = "aks-dhl-shared-prod-sea-001"
+  default = "aks-dhl-shared-prod-uks-001"
 }
 
 variable "dns_prefix" {
-  default = "aks-dhl-shared-prod-sea-001"
+  default = "aks-dhl-shared-prod-uks-001"
 }
 
 # Refer to https://azure.microsoft.com/global-infrastructure/services/?products=monitor for available Log Analytics regions.
 variable "log_analytics_workspace_location" {
-  default = "southeastasia"
+  default = "uksouth"
 }
 
 variable "log_analytics_workspace_name" {
-  default = "lw-dhl-prod-sea"
+  default = "lw-dhl-prod-uks"
 }
 
 # Refer to https://azure.microsoft.com/pricing/details/monitor/ for Log Analytics pricing
@@ -35,11 +35,11 @@ variable "log_analytics_workspace_sku" {
 }
 
 #variable "resoource_group_name" {
-#  default = "rg-dhl-prod-sea"
+#  default = "rg-dhl-prod-uks"
 #}
 
 variable "resource_group_location" {
-  default     = "southeastasia"
+  default     = "uksouth"
   description = "Location of the resource group."
 }
 
