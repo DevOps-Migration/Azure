@@ -38,10 +38,10 @@ variable "log_analytics_workspace_sku" {
 #  default = "rg-dhl-prod-sea"
 #}
 
-#variable "resource_group_location" {
-#  default     = "southeastasia"
-#  description = "Location of the resource group."
-#}
+variable "resource_group_location" {
+  default     = "southeastasia"
+  description = "Location of the resource group."
+}
 
 variable "resource_group_name_prefix" {
   default     = "rg"
